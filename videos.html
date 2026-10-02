@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Videos - CodeLearn BD</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        CodeLearn BD
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="videos.html">
+            Videos
+        </a>
+
+        <a href="upload.html">
+            Upload
+        </a>
+
+    </nav>
+
+</header>
+
+
+<section class="container">
+
+    <h1>Programming Videos</h1>
+
+
+    <input
+        type="text"
+        id="search"
+        class="search"
+        placeholder="Search videos..."
+    >
+
+
+    <div class="filter-buttons">
+
+        <button onclick="filterVideos('All')">
+            All
+        </button>
+
+        <button onclick="filterVideos('Python')">
+            Python
+        </button>
+
+        <button onclick="filterVideos('HTML')">
+            HTML
+        </button>
+
+        <button onclick="filterVideos('CSS')">
+            CSS
+        </button>
+
+        <button onclick="filterVideos('JavaScript')">
+            JavaScript
+        </button>
+
+    </div>
+
+
+    <div id="videoList"
+         class="video-grid">
+    </div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

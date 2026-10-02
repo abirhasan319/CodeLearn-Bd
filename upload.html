@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Upload Video - CodeLearn BD</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        CodeLearn BD
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="videos.html">Videos</a>
+
+        <a href="upload.html">Upload</a>
+
+    </nav>
+
+</header>
+
+
+<section class="upload-container">
+
+    <h1>Upload Programming Video</h1>
+
+    <p class="upload-text">
+        Add your Python, HTML, CSS or JavaScript video.
+    </p>
+
+
+    <form id="uploadForm">
+
+        <label for="title">
+            Video Title
+        </label>
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Example: Python Variables"
+            required
+        >
+
+
+        <label for="category">
+            Category
+        </label>
+
+        <select id="category">
+
+            <option value="Python">
+                Python
+            </option>
+
+            <option value="HTML">
+                HTML
+            </option>
+
+            <option value="CSS">
+                CSS
+            </option>
+
+            <option value="JavaScript">
+                JavaScript
+            </option>
+
+        </select>
+
+
+        <label for="description">
+            Description
+        </label>
+
+        <textarea
+            id="description"
+            placeholder="Write a short description..."
+        ></textarea>
+
+
+        <label for="videoFile">
+            Select Video
+        </label>
+
+        <input
+            type="file"
+            id="videoFile"
+            accept="video/*"
+            required
+        >
+
+
+        <button type="submit">
+            Upload Video
+        </button>
+
+    </form>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
